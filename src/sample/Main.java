@@ -11,11 +11,11 @@ public class Main extends Application implements PollingView {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("view.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../views/view.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 300, 275));
-        primaryStage.setMinWidth(600);
-        primaryStage.setMaxWidth(600);
+        primaryStage.setMinWidth(660);
+        primaryStage.setMaxWidth(660);
         primaryStage.setMinHeight(425);
         primaryStage.setMaxHeight(425);
         primaryStage.show();

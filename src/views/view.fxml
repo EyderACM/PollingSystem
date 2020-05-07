@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" scaleShape="false" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SystemController">
+   <children>
+      <Pane layoutX="14.0" layoutY="21.0" prefHeight="110.0" prefWidth="620.0" style="-fx-background-radius: 15; -fx-background-color: #be63ff;">
+         <effect>
+            <DropShadow color="#bfbfbf" offsetY="2.0" />
+         </effect>
+         <children>
+            <ImageView fitHeight="110.0" fitWidth="171.0" layoutX="3.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Bowie.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="190.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="David Bowie" wrappingWidth="218.830078125">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="191.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Distinguished british writer and song writer. Known for hit songs such as &quot;Space Oddity&quot; an &quot;Life on Mars&quot;." wrappingWidth="236.830078125">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Text>
+            <Circle fill="WHITE" layoutX="571.0" layoutY="55.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Text fill="#3c3c3c" layoutX="545.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="51.99998915195465">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Text>
+            <Circle fill="#575757" layoutX="516.0" layoutY="56.0" radius="16.0" stroke="#464646" strokeType="INSIDE" strokeWidth="0.0" />
+            <Text fill="WHITE" layoutX="505.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" textAlignment="CENTER" wrappingWidth="21.99998915195465" y="-1.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Text>
+            <Button layoutX="507.0" layoutY="43.0" mnemonicParsing="false" onAction="#vote" opacity="0.0" prefHeight="26.0" prefWidth="15.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="145.0" prefHeight="110.0" prefWidth="620.0" style="-fx-background-radius: 15; -fx-background-color: black;">
+         <effect>
+            <DropShadow color="#bfbfbf" offsetY="2.0" />
+         </effect>
+         <children>
+            <ImageView fitHeight="93.0" fitWidth="164.0" layoutX="8.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Radiohead.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="190.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Radiohead" wrappingWidth="191.830078125">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="191.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="British rockband originated in Oxford. Distinguished for their single &quot;Creep&quot; and albums such as Ok Computer." wrappingWidth="236.830078125">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Text>
+            <Circle fill="WHITE" layoutX="571.0" layoutY="55.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Text fill="#3c3c3c" layoutX="545.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="51.99998915195465">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Text>
+            <Circle fill="#575757" layoutX="516.0" layoutY="56.0" radius="16.0" stroke="#464646" strokeType="INSIDE" strokeWidth="0.0" />
+            <Text fill="WHITE" layoutX="505.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" textAlignment="CENTER" wrappingWidth="21.99998915195465" y="-1.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Text>
+            <Button layoutX="507.0" layoutY="43.0" mnemonicParsing="false" onAction="#vote" opacity="0.0" prefHeight="26.0" prefWidth="15.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="267.0" prefHeight="110.0" prefWidth="620.0" style="-fx-background-radius: 15; -fx-background-color: ffb940;">
+         <effect>
+            <DropShadow color="#bfbfbf" offsetY="2.0" />
+         </effect>
+         <children>
+            <Text fill="WHITE" layoutX="187.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tyler the Creator" wrappingWidth="277.830078125">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="93.0" fitWidth="164.0" layoutX="2.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/TylerCreator.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="191.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Singer and songwriter from California. Rap Icon distinguished for albums such as Flower Boy and Igor." wrappingWidth="236.83008030056953">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Text>
+            <Circle fill="WHITE" layoutX="572.0" layoutY="54.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Text fill="#3c3c3c" layoutX="546.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="51.99998915195465">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Text>
+            <Circle fill="#575757" layoutX="517.0" layoutY="55.0" radius="16.0" stroke="#464646" strokeType="INSIDE" strokeWidth="0.0" />
+            <Text fill="WHITE" layoutX="506.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" textAlignment="CENTER" wrappingWidth="21.99998915195465" y="-1.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Text>
+            <Button layoutX="508.0" layoutY="42.0" mnemonicParsing="false" onAction="#vote" opacity="0.0" prefHeight="26.0" prefWidth="15.0" />
+         </children></Pane>
+   </children>
+</AnchorPane>
