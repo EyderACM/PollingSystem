@@ -4,11 +4,12 @@ import models.VotingSubject;
 import views.CandidateView;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class PollingObserver {
-    private Map<String, VotingSubject> candidates;
+    private Map<String, VotingSubject> candidates = new HashMap<>();
     private List<CandidateView> views = new ArrayList<>();
 
     public void addObserver(CandidateView view){
