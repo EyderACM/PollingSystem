@@ -1,13 +1,14 @@
 package views;
 
-import controller.PollingObserver;
 import controller.SystemController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
-import models.VotingSubject;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Map;
 
@@ -22,6 +23,21 @@ public class PollingViewController{
         candidatesList.add(bowieCounterC);
         candidatesList.add(radioheadCounterC);
         candidatesList.add(tylerCounterC);
+
+        Stage pieStage = new Stage();
+        FXMLLoader fxmlLoaderPie = new FXMLLoader();
+        PieChartView pieView = new PieChartView();
+
+        Stage barsStage = new Stage();
+        FXMLLoader fxmlLoaderBars = new FXMLLoader();
+        BarsChartView barsView = new BarsChartView();
+
+        try {
+            pieView.init(fxmlLoaderPie, pieStage);
+            barsView.init(fxmlLoaderBars, barsStage);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void vote(ActionEvent event){
