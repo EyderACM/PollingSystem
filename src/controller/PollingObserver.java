@@ -1,7 +1,7 @@
 package controller;
 
 import models.VotingSubject;
-import views.CandidateView;
+import views.Observable;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,13 +10,13 @@ import java.util.Map;
 
 public class PollingObserver {
     private Map<String, VotingSubject> candidates = new HashMap<>();
-    private List<CandidateView> views = new ArrayList<>();
+    private List<Observable> views = new ArrayList<>();
 
-    public void addObserver(CandidateView view){
+    public void addObserver(Observable view){
         this.views.add(view);
     }
 
-    public void removeObserver(CandidateView view){
+    public void removeObserver(Observable view){
         this.views.remove(view);
     }
 
@@ -26,7 +26,7 @@ public class PollingObserver {
 
     public void setCandidates(Map<String, VotingSubject> candidates){
         this.candidates = candidates;
-        for(CandidateView view : this.views){
+        for(Observable view : this.views){
             view.update(this.candidates);
         }
     }

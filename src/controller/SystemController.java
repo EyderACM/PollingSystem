@@ -1,17 +1,14 @@
 package controller;
 
-import models.VotingSubject;
+import controller.commands.CommandInvoker;
 
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class SystemController {
 
     public static PollingObserver observer = new PollingObserver();
-
-    public static void vote(String candidateName){
-        Map<String, VotingSubject> candidates = observer.getCandidates();
-        candidates.get(candidateName).addVote();
-        observer.setCandidates(candidates);
-    }
-
+    public static CommandInvoker voter;
+    public static List<Memento> savedVoted = new ArrayList<Memento>();
 }

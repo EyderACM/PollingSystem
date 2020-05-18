@@ -17,6 +17,8 @@ public class VotingSubject {
         this.name = name;
     }
 
+    public void setVotes(int votes){ this.votes = votes; }
+
     public int getVotes() {
         return votes;
     }

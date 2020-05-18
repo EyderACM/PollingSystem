@@ -5,13 +5,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import models.VotingSubject;
 
 import java.io.IOException;
 import java.util.Map;
 
-public class PieChartView implements CandidateView {
+public class PieChartView implements Observable {
 
     PieChartController pc;
 
@@ -30,6 +29,5 @@ public class PieChartView implements CandidateView {
     @Override
     public void update(Map<String, VotingSubject> candidates) {
         pc.displayData();
-
     }
 }

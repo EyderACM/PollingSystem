@@ -10,7 +10,7 @@ import models.VotingSubject;
 import java.io.IOException;
 import java.util.Map;
 
-public class BarsChartView implements CandidateView {
+public class BarsChartView implements Observable {
 
     BarsChartController pc;
 
@@ -29,6 +29,5 @@ public class BarsChartView implements CandidateView {
     @Override
     public void update(Map<String, VotingSubject> candidates) {
         pc.displayData();
-
     }
 }
